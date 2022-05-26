@@ -1,0 +1,33 @@
+
+<body>
+    <header class="encabezado">
+        <div class="logo"></div>
+    </header>
+    <main class="principal">
+        <div>
+            <button class="botones iniciar" routerLinkActive="active" [routerLink]="['/ahorcado-main']">
+              Iniciar Juego
+            </button>
+        </div>
+        <div>
+            <button class="botones agregar" routerLinkActive="active" [routerLink]="['/agregar-palabra']">
+              Agregar Palabra
+            </button>
+        </div>
+        <section class="reglas">
+          <h3>AHORCADO</h3>
+          <p>REGLAS:</p>
+          <ul>
+            <li>&#11088; Adivinar la palabra</li>
+            <li>&#11088; Maximo de 7 vidas y por cada letra erronea se restara 1 vida</li>
+            <li>&#11088; Se podra agregar una palabra que se sorteara para aparecer en el juego principal</li>
+          </ul>
+        </section>
+    </main>
+
+    <footer>
+        <h4 class="name">Yonatan Rojas</h4>
+        <a class="link-2" href="https://www.linkedin.com/in/yonatan-alejandro-rojas-70571a236/">&#128316; Mi Linkedin</a>
+        <a class="link-2" href="https://github.com/YonatanRojas">&#128316; Mi Github</a>
+    </footer>
+</body>

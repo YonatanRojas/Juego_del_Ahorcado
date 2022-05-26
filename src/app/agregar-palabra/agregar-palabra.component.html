@@ -1,0 +1,25 @@
+
+<body>
+    <header class="encabezado">
+        <div class="logo"></div>
+    </header>
+    <main class="principal">
+        <textarea class="entrada_palabra" placeholder="Ingrese una palabra"></textarea>
+        <P class="aviso">Porfavor ingrese caracteres en MAYUSCULA.</P>
+        <div class="botones">
+            <button class="boton" type="button" routerLinkActive="active" [routerLink]="['/ahorcado-main']">
+              empezar
+            </button>
+            <button class="boton guardar" type="button">Guardar</button>
+            <button class="boton" routerLinkActive="active" [routerLink]="['/']">
+                Cancelar
+            </button>
+        </div>
+    </main>
+    <footer>
+        <h4 class="name">Yonatan Rojas</h4>
+        <a class="link-2" href="https://www.linkedin.com/in/yonatan-alejandro-rojas-70571a236/">&#128316; Mi Linkedin</a>
+        <a class="link-2" href="https://github.com/YonatanRojas">&#128316; Mi Github</a>
+    </footer>
+</body>
+

@@ -1,0 +1,227 @@
+// reset
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: -8px -4px;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+//estilos de la pagina agregar-palabra
+.botones{
+  width: max-content;
+  margin: 60px 28%;
+}
+.boton{
+  width: 150px;
+  height: 80px;
+  margin: 0 20px;
+  font-weight: bold;
+  background: linear-gradient(rgb(180, 11, 11), black);
+  border-radius: 12px;
+  border: none;
+}
+
+.entrada_palabra{
+  width: 400px;
+  height: 200px;
+  margin: 0 32%;
+  background: transparent;
+  border: none;
+  font-size: 25px;
+  color: rgb(238, 255, 0);
+  transition-duration: 0.5s;
+}
+
+.entrada_palabra:hover{
+  box-shadow: -2px 2px 10px 10px rgb(15, 23, 97);
+  border-radius: 10px;
+}
+
+.aviso{
+  text-align: center;
+  color: #fff;
+  margin: 10px 0;
+}
+
+.link{
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.link-2{
+  padding: 0 10px;
+}
+
+.boton:hover{
+  background: linear-gradient(red,blue);
+  box-shadow: 0px 5px 5px 3px rgb(28, 4, 136);
+  transition-duration: 0.8s;
+}
+
+//estilos generales
+body{
+    z-index: -1;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.753)),url("../IMG/fondo_espiral.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: movimiento 9s infinite linear alternate;
+}
+.encabezado{
+    position: relative;
+    width: 100%;
+    height: 200px;
+
+}
+.logo{
+    position: fixed;
+    margin: 20px;
+    background-image: url("../IMG/logo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 30%;
+}
+.logo:hover{
+  box-shadow: 2px 2px 10px 5px #fff;
+  animation: 1.5s move 1;
+  backface-visibility: visible;
+}
+
+footer{
+    position: relative;
+    text-align: center;
+    padding: 50px 0;
+    margin: 0;
+    width: 100%;
+    background: linear-gradient(black, rgb(1, 2, 48), rgb(0, 0, 0));
+    color: #cc00ff;
+    transition: 2s 2s 2s 5s;
+}
+footer:hover{
+  background: linear-gradient(rgb(2, 2, 95), rgb(19, 57, 78), rgb(49, 49, 45));
+
+}
+.name{
+  margin: 9px 0;
+}
+
+.name:hover{
+  color: rgb(82, 84, 189);
+  transition-duration: 0.7s;
+}
+
+@keyframes movimiento{
+  from{
+    background-position: bottom left;
+  }
+  to{
+    background-position: top right;
+  }
+}
+
+@keyframes move{
+  40%{
+      transform: perspective(500px)
+                  translateZ(120px)
+                  rotateY(170deg);
+  }
+  50%{
+      transform: perspective(500px)
+                  translateZ(120px)
+                  rotateY(170deg);
+  }
+  80%{
+      transform: perspective(500px)
+                  translateZ(0px)
+                  rotateY(360deg);
+  }
+  100%{
+      transform: perspective(500px)
+                  translateZ(120px)
+                  rotateY(360deg);
+  }
+}
+@media screen and (max-width: 1170px){
+  .entrada_palabra{
+    width: 400px;
+    height: 200px;
+    margin: 0 10%;
+  }
+  .botones{
+
+    margin: 100px 5%;
+  }
+}
+
+@media screen and (max-width: 630px){
+  .entrada_palabra{
+    width: 200px;
+    height: 200px;
+  }
+  .botones{
+    width: 300px;
+    margin: 40px 10%;
+  }
+  .boton{
+    width: 140px;
+    margin: 5px 5px;
+  }
+  footer{
+    bottom: -60px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .entrada_palabra{
+    width: 200px;
+    height: 250px;
+  }
+  .botones{
+    width: 300px;
+
+  }
+  .boton{
+    width: 100px;
+    margin: 5px 5px;
+  }
+}
